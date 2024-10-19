@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK-AOD</title>
+<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> 
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Creative Studio with dynamic scrolling animations using GSAP">
+    <meta name="keywords" content="Creative Studio, GSAP, ScrollTrigger, Animations, JavaScript, Web Development">
+
+  
+</head>
+<body>
+
+    <!-- <div class="pre-loader" id="preLoader">
+        <div class="loader-line"></div>
+    </div> 
+
+     <div class="overlay" onclick="showContent()"> <svg class="marquee-top__ico" viewBox="0 0 100 125" width="40"><path d="M50,97.5c-26.1915607,0-47.5-21.3084412-47.5-47.5S23.8084393,2.5,50,2.5S97.5,23.8084393,97.5,50S76.1915588,97.5,50,97.5z   M50,7.0238094C26.3030148,7.0238094,7.0238104,26.3030128,7.0238104,50S26.3030148,92.9761887,50,92.9761887  S92.9761887,73.6969833,92.9761887,50S73.6969833,7.0238094,50,7.0238094z"></path><g><ellipse cx="35.2381935" cy="34.3672791" rx="4.7493854" ry="6.5021348"></ellipse></g><g><ellipse cx="64.7618027" cy="34.3672791" rx="4.7493854" ry="6.5021348"></ellipse></g><path d="M50,80.4100494c-14.6896172,0-26.6402111-11.4621811-26.6402111-25.5509796  c0-1.2492523,1.0131454-2.2619057,2.2619038-2.2619057c1.2487602,0,2.2619057,1.0126534,2.2619057,2.2619057  c0,11.594223,9.9213562,21.0271759,22.1164017,21.0271759s22.1164017-9.4329529,22.1164017-21.0271759  c0-1.2492523,1.0131454-2.2619057,2.2619019-2.2619057c1.248764,0,2.2619095,1.0126534,2.2619095,2.2619057  C76.640213,68.9478683,64.689621,80.4100494,50,80.4100494z"></path></svg></div>  
+
+
+
+    <div class="content">
+     -->
+    
+    
+        <div class="crusor09">
+        
+        </div>
+      
+    <nav class="navbar">
+        <div class="logo-container">
+
+            <span style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: xx-large; font-weight: 700; letter-spacing: 2px;">AOD</span>
+       
+        </div>
+
+     
+ 
+        <ul class="nav-links" id="nav-links">
+            <div class="remove" onclick="remove_button()"><i class="fa-regular fa-hand-pointer"></i></div>
+        
+        </ul>
+
+
+    </nav>
+ 
+
+    <div class="content-container">
+        <!-- Left Section -->
+        <div class="Left">
+            <img onclick="" src="https://expertphotography.b-cdn.net/wp-content/uploads/2022/03/aesthetic-pictures-photographer-rainbow.jpg" alt="">
+          <div class="title-container">
+        
+            <h2 class="title">Motion</h2>
+          </div>
+         
+            <div class="stat">
+              <p class="label">Video</p>
+              <p class="value"><span class="stat-value4"></span> Min</p>
+            </div>
+        
+    
+            <div class="stat">
+              <p class="label">Photo</p>
+              <p class="value"><span class="stat-value5"></span>B px</p>
+            </div>
+            <div class="stat">
+              <p class="label">Production</p>
+              <p class="value">(1<span class="stat-value6"></span> campaigns)</p>
+            </div>
+          
+        </div>
+    
+        <!-- Right Section -->
+        <div class="right">
+          <div class="title-container">
+            <h2 class="title tilte2">Stills</h2>
+          </div>
+      
+            <div class="stat2">
+              <p class="label2">SALES</p>
+              <p class="value2"><span class="stat-value1">12439</span> Min</p>
+            </div>
+        
+    
+            <div class="stat2">
+              <p class="label2">popularity</p>
+              <p class="value2"><span class="stat-value2">289</span>B px</p>
+            </div>
+            <div class="stat2">
+              <p class="label2">Composition</p>
+              <p class="value2">(1<span class="stat-value3">51</span> campaigns)</p>
+            </div>
+
+        </div>
+    
+        <!-- Introduction Section -->
+     
+    
+        <!-- Marquee Section -->
+        <div class="marquee-section">
+            <div class="marquee-item">
+              <!-- Image that shows by default -->
+              <img class="marquee-image" src="https://cdn.prod.website-files.com/65d910f775d51ff5a0fc3b32/662a116b18143ce339106137_marquee-1.webp" alt="Accordion crew busy on set">
+          
+              <!-- Video that plays on hover -->
+              <video class="marquee-video" src="https://theartofdocumentary.com/drawing-a-line-george-henton-1080p.mp4" loop>
+                Your browser does not support the video tag.
+              </video>
+            </div>
+    
+          <div class="marquee-item">
+            <img  class="marquee-image" src="https://cdn.prod.website-files.com/65d910f775d51ff5a0fc3b32/662a1173bfff945b5d901c19_marquee-2.webp"
+              alt="Behind the scenes shot showing a complete production set">
+              <video class="marquee-video" src="https://theartofdocumentary.com/late-frost-flavien-kressman-odd-winner-1080p.mp4" loop>
+                Your browser does not support the video tag.
+              </video>
+          </div>
+
+
+          <div class="marquee-item">
+            <img class="marquee-image" src="https://cdn.prod.website-files.com/65d910f775d51ff5a0fc3b32/662a1178d643a2837e51fd88_marquee-3.webp"
+              alt="Camera man filming on a rooftop">
+              <video class="marquee-video" src="https://theartofdocumentary.com/lost-suenos-jakub-chlouba-documentary-1080p.mp4" loop>
+                Your browser does not support the video tag.
+              </video>
+        </div>
+      </div>
+    
+      <div class="intro-section">
+        <div class="intro-title"> Introduction </div>
+        <div class="intro-text">
+          <p>We're a tight-knit collective of artists and creative minds dedicated to crafting unique film and photographic works that entertain and engage.</p>
+        </div>
+      </div>
+  </div>
+     <!-- Main Content Container -->
+     <div class="content-container2">
+        <!-- Image 1 (Top Left) -->
+        <div class="image-container2 image1">
+          <img src="https://theartofdocumentary.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F0v9eq93x%2Fproduction%2Fdae1a671cf2fc57bf5d086e10973a4a6b275edf0-3504x2336.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=480&q=80" alt="Creative Book" class="responsive-image">
+        </div>
+      
+        <!-- Image 2 (Bottom Left) -->
+        <div class="image-container2 image2">
+          <img src="https://theartofdocumentary.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F0v9eq93x%2Fproduction%2F3909d6908e9b35587718a2344b157cca35af3a5e-1888x1416.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=480&q=80" alt="Creative Phone Display" class="responsive-image">
+        </div>
+      
+        <!-- Image 3 (Top Right) -->
+        <div class="image-container2 image3">
+          <img src="https://theartofdocumentary.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F0v9eq93x%2Fproduction%2F7c55a56daaf7cd7142afe3a68cc7c16b5035b3c9-2113x1412.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=480&q=80" alt="Creative Product Display" class="responsive-image">
+        </div>
+      
+        <!-- Image 4 (Bottom Right) -->
+        <div class="image-container2 image4">
+          <img src="https://theartofdocumentary.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F0v9eq93x%2Fproduction%2F3ad4896bafd689dbb7a55ffb28e6b38c6afbb80f-3504x2336.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=480&q=80" alt="Creative Apparel Display" class="responsive-image">
+        </div>
+      
+        <!-- Center Text -->
+        <div class="center-text">
+          <h1>CONNECT US</h1>
+     
+        </div>
+      
+        <!-- New Image 5 (Extra Left) -->
+        <div class="image-container2 image5">
+          <img src="https://theartofdocumentary.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F0v9eq93x%2Fproduction%2Fcaae99e58d3a962eb243a0f12cbad31cb3414ee5-2766x1844.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=480&q=80" alt="Creative Extra Display 1" class="responsive-image">
+        </div>
+      
+        <!-- New Image 6 (Extra Right) -->
+        <div class="image-container2 image6">
+          <img src="https://theartofdocumentary.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F0v9eq93x%2Fproduction%2F2e6b3b16b49580193ed608886b5ae0e63459677c-2736x1824.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=480&q=80" alt="Creative Extra Display 2" class="responsive-image">
+        </div>
+        
+      </div>
+
+   <!-- Gallery Icons -->
+<div class="gallery">
+    <video class="main-image" width="320" height="240" autoplay muted>
+        <source src="https://theartofdocumentary.com/aod-which-course-is-right-for-you-1080p.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="gallery2">
+    <div class="gallery-item">
+        <img src="https://theartofdocumentary.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F0v9eq93x%2Fproduction%2F16da4ed3b7028d87c0d2085f2bc2ee1e48d8323a-1792x1792.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=480&q=80" class="gallery-icon" alt="Icon 1" data-target="modal-content-1">
+    </div>
+    <div class="gallery-item">
+        <img src="https://theartofdocumentary.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F0v9eq93x%2Fproduction%2Fa8f78228b2bece65e6bd481635cfbf1a4d97eedb-1792x1792.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=480&q=80" class="gallery-icon" alt="Icon 2" data-target="modal-content-2">
+    </div>
+    <div class="gallery-item">
+        <img src="https://theartofdocumentary.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F0v9eq93x%2Fproduction%2F4e6dc0657838265acec57075f9fcfc69ebe86edc-1792x1792.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=480&q=80" class="gallery-icon" alt="Icon 3" data-target="modal-content-3">
+    </div>
+</div>
+</div>
+    
+<!-- Modal -->
+<div id="modal" class="modal hide-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-wrapper">
+        <div class="modal-header">
+            <span class="modal-close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <!-- Dynamic Video -->
+            <div class="modal-video">
+                <video autoplay muted>
+                    <source src="https://theartofdocumentary.com/aod-home-hero-full-1080p.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- Dynamic Content Sections -->
+            <div id="modal-content-1" class="modal-content">
+                <span style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: xx-large; font-weight: 700; letter-spacing: 2px; color: white; padding-left: 30px;">AOD</span>
+                <div class="modal-description">
+                    <div class="model_image">
+                       
+                    </div>
+                    <h2 class="modal-title">Beauty Play</h2>
+                    <p class="modal-text">Recognizing the growth and popularity of gaming, Beautyblender wanted to capture new and existing audiences by creating their first-ever game, 'Play', promoting their BOUNCE Skin Tint and limited edition color-changing Beautyblender.</p>
+                    <div class="modal-buttons">
+                        <a href="#" class="button-link">Website</a>
+                        <a href="#" class="button-link">Case Study</a>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-content-2" class="modal-content">
+             
+                <div class="modal-description">
+                    <div class="model_image">
+                        <span style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: xx-large; font-weight: 700; letter-spacing: 2px; color: white; padding-left: 30px;">AOD</span>
+                    </div>
+                    <h2 class="modal-title">Second Video Title</h2>
+                    <p class="modal-text">Description for the second video goes here. Explain the content or purpose of this video.</p>
+                    <div class="modal-buttons">
+                        <a href="#" class="button-link">Website</a>
+                        <a href="#" class="button-link">Case Study</a>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-content-3" class="modal-content">
+             
+                <div class="modal-description">
+                    <div class="model_image">
+                        <span style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: xx-large; font-weight: 700; letter-spacing: 2px; color: white; padding-left: 20px;">AOD</span>
+                    </div>
+                    <h2 class="modal-title">Third Video Title</h2>
+                    <p class="modal-text">Description for the third video goes here. Explain the content or purpose of this video.</p>
+                    <div class="modal-buttons">
+                        <a href="#" class="button-link">Website</a>
+                        <a href="#" class="button-link">Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div id="services-section" class="services-container">
+    <div class="services-header">
+      <h3 class="heading">Integrated <br>Services</h3>
+      <p class="subheading">First we listened to their needs, <span class="subheading2">and then we proposed different approaches in order to pick the best one for their current position.</span></p>
+    </div>
+
+<div class="gsiqa">
+    <img src="https://theartofdocumentary.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F0v9eq93x%2Fproduction%2F658013b32d6b8aa179c0f8f0f213bb57e763e8a3-5760x3240.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=768&q=80" class="amg amg1">
+    <img src="https://theartofdocumentary.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F0v9eq93x%2Fproduction%2Fb938f8433f79a63d2bca0520a343a776015cfd3e-5760x3240.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=768&q=80"class="amg amg2">
+    <img src="https://theartofdocumentary.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F0v9eq93x%2Fproduction%2F47327d7f8d90a5face263286b2de704d5a476894-5760x3240.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=768&q=80"class="amg amg3">
+    <img src="https://theartofdocumentary.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F0v9eq93x%2Fproduction%2F5f10f613d5aab4c4203d21f60045c9afc4349700-5760x3240.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=768&q=80"class="amg amg4">
+    <img src="https://theartofdocumentary.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F0v9eq93x%2Fproduction%2F5f10f613d5aab4c4203d21f60045c9afc4349700-5760x3240.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=768&q=80"class="amg amg5">
+</div>
+<div class="container_100">
+    <div class="_2-partt-numb-text">
+      <div id="w-node-c7ba9371-2349-544f-a40b-c3f78c462e8d-9d182bc6" class="_2-numbers-wrap">
+        <!-- Number 1 -->
+        <div id="w-node-c937400b-884c-7784-fd71-450ed402ec7e-9d182bc6" class="numb-p21">
+          <div id="w-node-f41cebcc-33a1-02b5-2dd4-04e35a743f0c-9d182bc6" class="h0-plus">
+            <h2 id="w-node-f41cebcc-33a1-02b5-2dd4-04e35a743f0d-9d182bc6" class="h0">5</h2>
+            <img
+              src="https://cdn.prod.website-files.com/66476c64e241589e9d182b69/668ccdcf8c39cf84da6bd553_plus.svg"
+              loading="lazy"
+              id="w-node-f41cebcc-33a1-02b5-2dd4-04e35a743f0f-9d182bc6"
+              alt="plus sign"
+              class="plus-img"
+            />
+          </div>
+          <p class="p21px">years experience</p>
+        </div>
+  
+        <!-- Number 2 -->
+        <div id="w-node-ad628c36-b1cf-d7bf-e9aa-565e8431e30b-9d182bc6" class="numb-p21">
+          <div id="w-node-_97bdd571-9a4c-c6f9-6fe3-127908cda0e1-9d182bc6" class="h0-plus">
+            <h2 id="w-node-_97bdd571-9a4c-c6f9-6fe3-127908cda0e2-9d182bc6" class="h0">150</h2>
+            <img
+              src="https://cdn.prod.website-files.com/66476c64e241589e9d182b69/668ccdcf8c39cf84da6bd553_plus.svg"
+              loading="lazy"
+              id="w-node-_97bdd571-9a4c-c6f9-6fe3-127908cda0e4-9d182bc6"
+              alt="plus sign"
+              class="plus-img"
+            />
+          </div>
+          <p class="p21px">projects done</p>
+        </div>
+      </div>
+  
+      <!-- Description Text -->
+      <h2 class="h2">
+        I’m an award-winning designer creating convenient and immersive experiences in the digital world.
+        <br /><br />
+        I have collaborated with numerous agencies, startups, companies, and individuals across the globe, on projects that
+        span from tech and finance to culture and e-commerce.
+      </h2>
+    </div>
+  </div>
+</div>
+
+
+<div class="i01f_grid">
+    <div class="g8ir6d">
+<div class="i9t7em_item itm1 crops-f">
+    <div class="b8i6g_inner ">
+      
+        <div class="b8i6g_text">
+            <h3>IN THE READ</h3>
+            <h2>SET YOUR HAND</h2>
+        </div>
+        <div class="b8i6g_icon im1">
+            <img src="img/_88803352_131014807486753326_bangladesh_mohammad_ponir_hossain_bangladesh_2nd-place_natioal-award_2016-sony-world-photography-awards.jpg-modified (1).webp" alt="growth icon">
+        </div>
+    </div>
+    </div>
+    <div class="i9t7em_item itm2 crops-f">
+        <div class="b8i6g_inner ">
+          
+            <div class="b8i6g_text">
+                <h3>IN THE READ</h3>
+                <h2>TAKE SHOOT INLINE</h2>
+            </div>
+            <div class="b8i6g_icon im2">
+                <img src="img/im-modified.jpg" alt="growth icon">
+            </div>
+        </div>
+        </div>
+        <div class="i9t7em_item itm3 crops-f">
+            <div class="b8i6g_inner ">
+              
+                <div class="b8i6g_text">
+                    <h3>IN THE READ</h3>
+                    <h2>TAKE DIRECTION</h2>
+                </div>
+                <div class="b8i6g_icon im3">
+                    <img src="img/tv-and-film-canadavisa-modified.jpg" alt="growth icon">
+                </div>
+            </div>
+            </div>
+            <div class="i9t7em_item itm4 crops-f">
+                <div class="b8i6g_inner crops-f">
+                  
+                    <div class="b8i6g_text">
+                        <h3>IN THE READ</h3>
+                        <h2>ON A SECOND </h2>
+                    </div>
+                    <div class="b8i6g_icon im4">
+                        <img src="https://images.unsplash.com/photo-1649364000880-ab2c567588ff?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJsYWNrJTIwYW5kJTIwd2hpdGUlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8MA%3D%3D" alt="growth icon">
+                    </div>
+                </div>
+                </div>
+                <div class="i9t7em_item itm5 crops-f">
+                    <div class="b8i6g_inner crops-f">
+                      
+                        <div class="b8i6g_text">
+                            <h3>IN THE READ</h3>
+                            <h2>SEAN ON NOW</h2>
+                        </div>
+                        <div class="b8i6g_icon im5">
+                            <img src="img/FilmIndustry2_4X3-1200x900-modified.jpg" alt="growth icon">
+                        </div>
+                    </div>
+                    </div>
+</div>
+
+</div>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>We are a premier film-making agency dedicated to crafting high-quality content that resonates with audiences and tells compelling stories.</p>
+            <div class="socials">
+                <a href="https://www.facebook.com/profile.php?id=100082823667198" target="_blank" aria-label="Facebook"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/800px-2021_Facebook_icon.svg.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/hassu___u/" target="_blank" aria-label="Instagram"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDsN9ZTNo54qHapU69KOSZ3ZZ4TAybpsz_RuJ0g763cmnj3iPa" alt="Instagram"></a>
+                <a href="#" target="_blank" aria-label="Twitter"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTK1cxRczM6fm_qIlxkXF4gfCCMiUae8eXQRfNS0hhnTQpWCYNc" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/in/syed-haseeb-2640572b5/" target="_blank" aria-label="LinkedIn"><img src="https://yt3.ggpht.com/ytc/AKedOLQUW9FJ6oz2WOkfU_2SbFanfDvOXrYVfE4SuaDyrz0=s900-c-k-c0x00ffffff-no-rj" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="footer-section categories">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Cinematography</a></li>
+                <li><a href="#">Editing</a></li>
+                <li><a href="#">Scriptwriting</a></li>
+                <li><a href="#">Directing</a></li>
+                <li><a href="#">Production</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="femidahaseeb7@gmail.com">femidahaseeb7@gmail.com</a></p>
+            <p>Phone: <a href="tel:+123456789">03428106303</a></p>
+            <p>Location: Karchi pakistan</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Film Making Agency. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+    <img src="https://www.slashgear.com/img/gallery/15-photography-trends-you-need-to-be-aware-of-in-2022/intro-1655235618.jpg" alt="Background" class="footer-background">
+</footer>
+
+
+ 
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script> 
+    <script src="java.js"></script>
+</body>
+</html>
